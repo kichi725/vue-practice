@@ -1,21 +1,24 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Login from "./components/Login.vue";
-import Axios from './components/Ajax.vue';
+import Home from '@/pages/Home.vue';
+import Header from '@/pages/Header.vue';
+import SidebarLeft from '@/pages/SidebarLeft.vue';
+import SidebarRight from '@/pages/SidebarRight.vue';
+import Post from '@/pages/Post.vue';
+import Article from '@/pages/Article.vue';
+
 </script>
 
 <template>
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <Header />
+  <div class="d-flex justify-content-center container">
+    <SidebarLeft class="col-3" />
+    <div class="col-6">
+      <Post />
+      <Article />
+    </div>
+    <SidebarRight class="col-3" />
   </div>
-  <HelloWorld msg="Vite + Vue" /> -->
-  <Login />
-  <!-- <Axios /> -->
+
 </template>
 
 <style scoped>
